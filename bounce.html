@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      background-color: rgb(29, 26, 26);
+    }
+     
+        .main{
+            padding-left: 10%;
+            padding-right: 10%;
+            margin-top: 400px;
+            border: 10px;
+            border-bottom: 20px solid gray;
+            border-radius: 10px;
+            margin-left: 35%;
+            margin-right: 50%;
+            width: 10%;
+            z-index: 2;
+            
+        }
+        #ball1,#ball2,#ball3{
+            border-radius: 50%;
+            background-color: orange;
+            width: 30px;
+            height: 30px;
+            display:inline-block;
+            margin-left: 10px;
+            animation-name:bounce ;
+            animation-duration:     3s;
+            animation-iteration-count: infinite;
+            margin-top: 200px;
+            box-shadow: 1px 1px 7px gray;
+            z-index: 2;
+        }
+        #ball1{
+            animation-delay: 2s;
+        }
+        #ball2{
+            animation-delay: 1s;
+            background-color: rgb(234, 49, 49);
+        }
+        #ball3{
+            animation-delay: 0s;
+            background-color: rgb(155, 214, 65);
+        }
+        @keyframes bounce{
+            0%{
+                transform: translatey(0px);
+            }
+            25%{
+                transform: translatey(-200px);
+            }
+            50%{
+                transform:translatey(0px) ;
+            }
+            75%{
+                transform:translatey(-200px) ;
+            }
+        }
+        .main2{
+            padding-left: 52%;
+            margin-top: 10px;
+            margin-left: -90px;
+            z-index: 2;
+        }
+        #ball4,#ball5,#ball6,#ball7,#ball8,#ball9{
+            border-radius: 50%;
+            background-color:white;
+            width: 5px;
+            height: 5px;
+            display:inline-block;
+            margin-left: 5px;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            z-index: 2;
+        }
+  #ball4{
+    animation-name:zoom ;
+    animation-delay: 0.6s;
+  }
+  #ball5{
+    animation-name:zoom ;
+    animation-delay: 1s;
+  }
+  #ball6{
+    animation-name:zoom ;
+    animation-delay: 1.5s;
+  }
+  #ball7{
+    animation-name:zoom ;
+    animation-delay: 1.9s;
+  }
+  #ball8{
+    animation-name:zoom ;
+    animation-delay: 2.3s;
+  }
+  #ball9{
+    animation-name:zoom ;
+    animation-delay: 2.6s;
+  }
+  @keyframes zoom{
+    0%{
+    transform: scale(1);
+    }
+    50%{
+    transform: scale(2);
+    }
+    100%{
+    transform: scale(1);
+    }
+  }
+  .mar{
+    color: white;
+    position:relative;
+    top: -700px;
+   font-size: 30px;
+   font-weight: 300;
+    z-index: -1;
+  }
+    </style>
+</head>
+<body>
+ <div class="main">
+    <div id="ball1"></div>
+    <div id="ball2"></div>
+    <div id="ball3"></div>
+</div>
+<div class="main2">
+    <div id="ball4"></div>
+    <div id="ball5"></div>
+    <div id="ball6"></div>
+    <div id="ball7"></div>
+    <div id="ball8"></div>
+    <div id="ball9"></div>
+</div>
+<div id="box">
+</div>
+<div class="mar">
+<marquee behavior="alternate" direction="up" height="350px">
+  <marquee behavior="alternate" direction="right" width="1680px">
+    Bouncing Balls</marquee>
+</div>
+
+</body>
+</html>

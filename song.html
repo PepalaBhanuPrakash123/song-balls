@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .audio{
+            z-index: 1;
+            position: relative;
+            margin-top: -100px;
+            margin-left: 700px;
+           
+        }
+        #image2 img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid white;
+            position: relative;
+            top: -600px;
+            left: 750px;
+            animation-name: rotate;
+            animation-duration: 190s;
+            animation-timing-function:cubic-bezier(0.175, 0.285, 0.32, 2.275);
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(-360deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .song{
+            font-size: 30px;
+            font-weight: 400;
+            position: absolute;
+            top: 650px;
+            color: white;
+            left: 710px;
+            
+        }
+        #bar1,#bar2,#bar3,#bar4,#bar5,#bar6,#bar7,#bar8, #bar9,#bar10,#bar11,#bar12,#bar13,#bar14,#bar15,#bar16,#bar17,#bar18,#bar19,#bar20{
+            height: 15px;
+            left: 10px;
+            width: 5px;
+            position: relative;
+            top: -400px;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            border-color: rgb(175, 164, 164);
+            display: inline-block;
+            animation-direction: alternate;
+        }
+        #bar1{
+            animation-delay: 0s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+       #bar2 {
+            animation-delay: 0.2s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+        #bar3 {
+            animation-delay: 0.4s;
+            animation-name:bar ;
+            animation-duration: 0.8s;
+        }
+        #bar4 {
+            animation-delay: 0.6s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        #bar5 {
+            animation-delay: 0.4s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+        #bar6 {
+            animation-delay: 0.2s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+        #bar7{
+            animation-delay: 0.8s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+       #bar8 {
+            animation-delay: 0.4s;
+            animation-name:bar ;
+            animation-duration: 0.8s;
+        }
+        #bar9 {
+            animation-delay: 0.2s;
+            animation-name:bar ;
+            animation-duration: 0.8s;
+        }
+        #bar10 {
+            animation-delay: 0.6s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        #bar11 {
+            animation-delay: 0.4s;
+            animation-name:bar ;
+            animation-duration: 0.7s;
+        }
+        #bar12 {
+            animation-delay: 0.3s;
+            animation-name:bar ;
+            animation-duration: 0.8s;
+        }
+        #bar13 {
+            animation-delay: 0.1s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+        #bar14 {
+            animation-delay: 0.5s;
+            animation-name:bar ;
+            animation-duration: 0.8s;
+        }
+        #bar15 {
+            animation-delay: 0.7s;
+            animation-name:bar ;
+            animation-duration: 0,8s;
+        }
+        #bar16 {
+            animation-delay: 0.2s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        #bar17 {
+            animation-delay: 0.3s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        #bar18 {
+            animation-delay: 0.5s;
+            animation-name:bar ;
+            animation-duration: 0.9s;
+        }
+        #bar19 {
+            animation-delay: 0.7s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        #bar20 {
+            animation-delay: 0.3s;
+            animation-name:bar ;
+            animation-duration: 1s;
+        }
+        @keyframes bar{
+            0%{
+                transform: scaleY(0);
+            }
+            100%{
+                transform: scaleY(5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="./background.jpg" alt="" width="100%" height="800vh">
+    <div class="audio">
+    <audio controls muted >
+        <source src="./Gundellonaa (RaagJatt.com).mp3">
+    </audio>
+    </div>
+    <div id="image2">
+        <img src="./ori devuda.jpeg" alt="">
+    </div>
+    <div class="song ">
+    <marquee behavior="" direction="left" width="290px">Gundellonaa-Song.Mp3 </marquee>
+    </div>
+    <div id="music">
+ <span>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+    <h1 id="bar9" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+    <h1 id="bar9" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+    <h1 id="bar9" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar15" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar9" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar3" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar5" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar17" style="background-color:white;"></h1>
+    <h1 id="bar18" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar20" style="background-color:white;"></h1>
+    <h1 id="bar2" style="background-color:white;"></h1>
+    <h1 id="bar6" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+    <h1 id="bar7" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+    <h1 id="bar9" style="background-color:white;"></h1>
+    <h1 id="bar10" style="background-color:white;"></h1>
+    <h1 id="bar11" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar13" style="background-color:white;"></h1>
+    <h1 id="bar14" style="background-color:white;"></h1>
+    <h1 id="bar1" style="background-color:white;"></h1>
+    <h1 id="bar19" style="background-color:white;"></h1>
+    <h1 id="bar12" style="background-color:white;"></h1>
+    <h1 id="bar16" style="background-color:white;"></h1>
+    <h1 id="bar4" style="background-color:white;"></h1>
+    <h1 id="bar8" style="background-color:white;"></h1>
+ </span>
+    </div>
+</body>
+</html>
